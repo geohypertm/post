@@ -1,7 +1,7 @@
 
 
 const getPostData = async(id) => {
-    const res = fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {cache: "force-cache"});
+    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {cache: "force-cache"});
     const data = await res.json();
 
     return data
