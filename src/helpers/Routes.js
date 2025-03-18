@@ -10,5 +10,10 @@ export const Rotes = [
     {
         title: "پست ها",
         link: "/posts"
-    }
+    },
+    {
+        title: "کلاینت | پست ها",
+        link: "/posts-client"
+    },
+
 ];
