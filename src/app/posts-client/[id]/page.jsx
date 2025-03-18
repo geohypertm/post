@@ -24,6 +24,7 @@ const DescId = () => {
 
   if (datas) {
     document.title = datas.title
+
   }
   if (!datas) return <p>لطفا صبر کنید...</p>;
 
