@@ -1,7 +1,8 @@
-import axios from "axios";
+
 
 const getPostData = async(id) => {
-    const {data} = await axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`);
+    const res = fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {cache: "force-cache"});
+    const data = await res.json();
 
     return data
 }
