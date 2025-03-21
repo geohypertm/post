@@ -3,7 +3,10 @@ import Link from "next/link";
 
 const Posts = async() => {
 
-    const {data} = await axios.get("https://jsonplaceholder.typicode.com/posts");
+    const response = await fetch("http://localhost:8585/posts", {
+        cache: "force-cache",
+    });
+    const data = await response.json();
 
     return (
         <>

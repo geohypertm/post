@@ -1,8 +1,10 @@
 
 
+
 const getPostData = async(id) => {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {cache: "force-cache"});
+    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {next: {revalidate: 10}});
     const data = await res.json();
+    console.log(data);
 
     return data
 }

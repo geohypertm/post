@@ -1,0 +1,6 @@
+{
+    "posts": [
+      { "id": "1", "title": "a title", "body": "f" }, 
+      { "id": "2", "bio": "another title", "body": "ذ" }
+        ]
+  }
